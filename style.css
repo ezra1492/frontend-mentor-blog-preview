@@ -42,6 +42,7 @@ DESIGN TOKENS ↓
   --sp-100: 0.5rem; /* 8px */
   --sp-150: 0.75rem; /* 12px */
   --sp-300: 1.5rem; /* 24px */
+  --sp-400: 2rem; /* 32px */
 
   /* CARD WIDTH */
   --crd-width: 24rem; /* 24px */
@@ -154,6 +155,18 @@ main {
   font-size: var(--fs-medium);
   display: block;
   margin-bottom: var(--sp-300);
+}
+
+.blog-card__creator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-150);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+}
+
+.blog-card__creator-img {
+  width: var(--sp-400);
 }
 /* ================
 BLOG ENTRY DESIGN ↑
