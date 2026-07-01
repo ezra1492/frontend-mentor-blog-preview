@@ -31,11 +31,30 @@ DESIGN TOKENS ↓
   --fw-bold: 800;
   --fw-regular: 500;
 
+  /* LINE HEIGHT */
+  --lh-general: 1.5;
+
   /* SPACING */
   --sp-50: 0.25rem;
   --sp-100: 0.5rem;
   --sp-150: 0.75rem;
   --sp-300: 1.5rem;
+}
+
+@font-face {
+  font-family: "Figtree", sans-serif;
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree", sans-serif;
+  src: url(assets/fonts/static/Figtree-Medium.ttf);
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* ============
