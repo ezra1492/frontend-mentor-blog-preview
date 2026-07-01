@@ -148,7 +148,20 @@ main {
   text-decoration: none;
   font-size: var(--fs-big);
   margin: var(--sp-150) 0;
+  transition: color 0.3s ease; /* mouse interaction, leaving the link area */
 }
+
+/* ===========
+ACTIVE STATE ↓
+============== */
+.blog-card__link:hover,
+.blog-card__link:focus-visible {
+  color: var(--clr-yellow);
+}
+
+/* ===========
+ACTIVE STATE ↑
+============== */
 
 .blog-card__description {
   color: var(--clr-gray500);
