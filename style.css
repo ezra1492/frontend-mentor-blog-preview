@@ -21,6 +21,9 @@ DESIGN TOKENS ↓
   --clr-gray500: hsl(0, 0%, 42%);
   --clr-blue-attribution: hsl(228, 45%, 44%);
 
+  /* FONT FAMILIES */
+  --ff-general: "Figtree", sans-serif;
+
   /* FONT SIZES */
   --fs-attribution: 0.6875rem;
   --fs-big: 1.5rem;
@@ -39,6 +42,9 @@ DESIGN TOKENS ↓
   --sp-100: 0.5rem;
   --sp-150: 0.75rem;
   --sp-300: 1.5rem;
+
+  /* CARD WIDTH */
+  --crd-width: 24rem;
 }
 
 @font-face {
@@ -71,6 +77,25 @@ BLOG DESIGN ↓
 
 .attribution a {
   color: var(--clr-blue-attribution);
+}
+
+body {
+  background-color: var(--clr-yellow);
+  font-family: var(--ff-general);
+  line-height: var(--lh-general);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: auto 0;
+}
+
+.blog-card {
+  width: var(--crd-width);
 }
 
 /* ============
