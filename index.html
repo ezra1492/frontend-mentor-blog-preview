@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="blog-card">
+        <!-- contains the blog-card and its 4 branches 
+        <body> (Raíz del Documento)
+ ├── <main> (Área de Compilación de Contenido)
+ │    └── <article class="blog-card"> (EL BLOQUE / ENTIDAD)
+ │       1 ├── <section class="blog-card__illustration"> ─── [Imagen]
+ │       2 ├── <header> ──────────────────────────────────┐
+ │         │    ├── <span class="blog-card__tag">         │ (Meta-datos)
+ │         │    ├── <time datetime="2023-12-21">          │
+ │         │    └── <h1 class="blog-card__title">         ┘
+ │       3 ├── <section class="blog-card__description"> ── [Cuerpo]
+ │       4 └── <footer class="blog-card__creator"> ─────── [Autoría]
+ └── <footer class="attribution"> (Metadatos del Proyecto) 
+        -->
+        <section class="blog-card__illustration">
+          <img
+            src="assets/images/illustration-article.svg"
+            alt="abstract illustration about web development, includes angle brackets, a slash and curve brackets."
+          />
+        </section>
+
+        <header>
+          <span class="blog-card__tag">Learning</span>
+
+          <time datetime="2023-12-21">Published 21 Dec 2023</time>
+
+          <h1 class="blog-card__title">
+            <a href="#">HTML & CSS foundations</a>
+          </h1>
+        </header>
+
+        <section class="blog-card__description">
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </section>
+
+        <footer class="blog-card__creator">
+          <img src="assets/images/image-avatar.webp" alt="" />Greg Hooper
+        </footer>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/ezra1492"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Israel (Ray) Guevara</a
+      >.
+    </footer>
+  </body>
+</html>
