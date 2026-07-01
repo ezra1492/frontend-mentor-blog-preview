@@ -49,6 +49,7 @@ DESIGN TOKENS ↓
   /* BORDER RADIUS */
   --br-big: 1.25rem;
   --br-small: 0.625rem;
+  --br-2x-small: 0.25rem;
 
   /* BORDER */
   --bd-general: 1px solid var(--clr-gray500);
@@ -118,6 +119,26 @@ main {
   display: block; /* eliminates descenders space */
   height: auto;
   border-radius: var(--br-small);
+}
+
+.blog-card__header {
+  margin-top: var(--sp-300);
+}
+
+.blog-card__tag {
+  background-color: var(--clr-yellow);
+  padding: var(--sp-50) var(--sp-150);
+  border-radius: var(--br-2x-small);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-small);
+  color: var(--clr-gray950);
+}
+
+.blog-card__date {
+  display: block;
+  margin-top: var(--sp-100);
+  font-size: var(--fs-small);
+  color: var(--clr-gray950);
 }
 
 /* ================
