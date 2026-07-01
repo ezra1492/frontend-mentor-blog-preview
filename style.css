@@ -1,0 +1,59 @@
+/* ======
+BOX RESET 
+========= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============
+DESIGN TOKENS ↓
+=============== */
+:root {
+  /* COLOR PALETTE */
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray950: hsl(0, 0%, 7%);
+  --clr-gray500: hsl(0, 0%, 42%);
+  --clr-blue-attribution: hsl(228, 45%, 44%);
+
+  /* FONT SIZES */
+  --fs-attribution: 0.6875rem;
+  --fs-big: 1.5rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.875rem;
+
+  /* FONT WEIGHTS */
+  --fw-bold: 800;
+  --fw-regular: 500;
+
+  /* SPACING */
+  --sp-50: 0.25rem;
+  --sp-100: 0.5rem;
+  --sp-150: 0.75rem;
+  --sp-300: 1.5rem;
+}
+
+/* ============
+DESIGN TOKENS ↑
+=============== */
+
+/* ============
+BLOG DESIGN ↓
+=============== */
+.attribution {
+  font-size: var(--fs-attribution);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-blue-attribution);
+}
+
+/* ============
+BLOG DESIGN ↑
+=============== */
