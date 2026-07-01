@@ -26,30 +26,30 @@ DESIGN TOKENS ↓
 
   /* FONT SIZES */
   --fs-attribution: 0.6875rem;
-  --fs-big: 1.5rem;
-  --fs-medium: 1rem;
-  --fs-small: 0.875rem;
+  --fs-big: 1.5rem; /* 24px */
+  --fs-medium: 1rem; /* 16px */
+  --fs-small: 0.875rem; /* 14px */
 
   /* FONT WEIGHTS */
   --fw-bold: 800;
   --fw-regular: 500;
 
   /* LINE HEIGHT */
-  --lh-general: 1.5;
+  --lh-general: 1.5; /* unitless to ensure optimal Text Scaling */
 
   /* SPACING */
-  --sp-50: 0.25rem;
-  --sp-100: 0.5rem;
-  --sp-150: 0.75rem;
-  --sp-300: 1.5rem;
+  --sp-50: 0.25rem; /* 4px */
+  --sp-100: 0.5rem; /* 8px */
+  --sp-150: 0.75rem; /* 12px */
+  --sp-300: 1.5rem; /* 24px */
 
   /* CARD WIDTH */
-  --crd-width: 24rem;
+  --crd-width: 24rem; /* 24px */
 
   /* BORDER RADIUS */
-  --br-big: 1.25rem;
-  --br-small: 0.625rem;
-  --br-2x-small: 0.25rem;
+  --br-big: 1.25rem; /* 20px */
+  --br-small: 0.625rem; /* 10px */
+  --br-2x-small: 0.25rem; /* 4px */
 
   /* BORDER */
   --bd-general: 1px solid var(--clr-gray500);
@@ -141,6 +141,13 @@ main {
   color: var(--clr-gray950);
 }
 
+.blog-card__link {
+  display: block;
+  color: var(--clr-gray950);
+  text-decoration: none;
+  font-size: var(--fs-big);
+  margin: var(--sp-150) 0;
+}
 /* ================
 BLOG ENTRY DESIGN ↑
 =================== */
