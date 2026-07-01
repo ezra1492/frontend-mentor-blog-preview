@@ -113,6 +113,13 @@ main {
   box-shadow: var(--bs-general);
 }
 
+.blog-card__illustration {
+  width: 100%;
+  display: block; /* eliminates descenders space */
+  height: auto;
+  border-radius: var(--br-small);
+}
+
 /* ================
 BLOG ENTRY DESIGN ↑
 =================== */
