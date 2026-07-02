@@ -151,12 +151,12 @@ body {
 /* ===========
 ACTIVE STATE ↓
 ============== */
-.blog-card__link:hover,
-.blog-card__link:focus-visible {
+.blog-card__link:hover {
   color: var(--clr-yellow);
 }
 
 .blog-card__link:focus-visible {
+  color: var(--clr-yellow);
   background-color: var(--clr-gray950);
   text-decoration: underline;
 }
