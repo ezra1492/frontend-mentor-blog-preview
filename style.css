@@ -57,9 +57,6 @@ DESIGN TOKENS ↓
 
   /* BOX SHADOW */
   --bs-general: 0.5rem 0.5rem var(--clr-gray950);
-
-  /* CURSOR */
-  --cursor-pointer: url("assets/images/Pointer.png"), pointer;
 }
 
 @font-face {
@@ -93,7 +90,6 @@ BLOG ENTRY DESIGN ↓
 
 .attribution a {
   color: var(--clr-blue-attribution);
-  cursor: var(--cursor-pointer);
 }
 
 body {
@@ -105,10 +101,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-main {
-  margin: auto 0;
 }
 
 .blog-card {
@@ -154,7 +146,6 @@ main {
   font-size: var(--fs-big);
   margin: var(--sp-150) 0;
   transition: color 0.3s ease; /* mouse interaction, leaving the link area */
-  cursor: var(--cursor-pointer);
 }
 
 /* ===========
