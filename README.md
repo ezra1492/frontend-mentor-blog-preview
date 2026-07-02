@@ -1,12 +1,10 @@
 ## Overview
 
+This project is a **Blog Card Preview** component engineered with a **Mobile-First** and **A11Y-First** philosophy. The primary objective was to achieve high-fidelity replication of the Figma design while optimizing **CSS Architecture** for scalability and strict adherence to **WCAG** standards.
+
 ### The Challenge
 
-Users should be able to:
-
-- See hover and focus states for all interactive elements on the page
-
-I achieved Active States by implementing `:hover` and `:focus-visible` in the `blog-card__link` class, in addition to `transition`, ensuring a smooth switch between Inactive and Active States.
+The core challenge was to ensure that users navigating via keyboard or voice-assisted technologies experience clear **Interactive States**. I prioritized **A11Y** standards over literal design interpretation, treating the original Figma file as a conceptual guide to enforce robust accessibility.
 
 ### Links
 
@@ -20,6 +18,8 @@ I achieved Active States by implementing `:hover` and `:focus-visible` in the `b
 ![Initial Sketch](assets/images/screenshot.png)
 
 ### Build with
+
+Semantic HTML5, CSS3, Flexbox, clamp(), gh-pages:
 
 - **Semantic HTML5 Architecture:** Use `<article>`, `<header>`, `<time>` with standard ISO 8601.
 - **CSS3 Design Token Vault:** Centralize variables inside the global `:root` pseudo-class.
@@ -60,7 +60,6 @@ I achieved Active States by implementing `:hover` and `:focus-visible` in the `b
   font-size: var(--fs-big);
   margin: var(--sp-150) 0;
   transition: color 0.3s ease; /* mouse interaction, leaving the link area */
-  cursor: var(--cursor-pointer);
 }
 
 /* ===========
@@ -70,10 +69,27 @@ ACTIVE STATE ↓
 .blog-card__link:focus-visible {
   color: var(--clr-yellow);
 }
+
+.blog-card__link:focus-visible {
+  background-color: var(--clr-gray950);
+  text-decoration: underline;
+}
+
+.attribution a:focus-visible {
+  color: var(--clr-yellow);
+  background-color: var(--clr-gray950);
+  font-weight: var(--fw-bold);
+}
 /* ===========
 ACTIVE STATE ↑
 ============== */
 ```
+
+### Learning Reflection
+
+1. **A11Y-First Focus Sates:** I moved from a High Fidelity from a Figma-centric approach to a industry-standard-first framework.
+
+2. **CSS Hygiene & Redundancy Elimination:** Even though the Figma design includes custom pointers, I learned to trust native browser rendering resources to avoid unnecessary assets.
 
 ### Continued Development
 

@@ -85,7 +85,7 @@ BLOG ENTRY DESIGN ↓
 .attribution {
   font-size: var(--fs-attribution);
   text-align: center;
-  margin-top: var(--sp-100);
+  margin-top: var(--sp-300);
 }
 
 .attribution a {
