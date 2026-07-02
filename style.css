@@ -155,6 +155,17 @@ ACTIVE STATE ↓
 .blog-card__link:focus-visible {
   color: var(--clr-yellow);
 }
+
+.blog-card__link:focus-visible {
+  background-color: var(--clr-gray950);
+  text-decoration: underline;
+}
+
+.attribution a:focus-visible {
+  color: var(--clr-yellow);
+  background-color: var(--clr-gray950);
+  font-weight: var(--fw-bold);
+}
 /* ===========
 ACTIVE STATE ↑
 ============== */
