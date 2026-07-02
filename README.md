@@ -17,7 +17,7 @@ The core challenge was to ensure that users navigating via keyboard or voice-ass
 
 ![Initial Sketch](assets/images/screenshot.png)
 
-### Build with
+### Built with
 
 Semantic HTML5, CSS3, Flexbox, clamp(), gh-pages:
 
@@ -28,7 +28,7 @@ Semantic HTML5, CSS3, Flexbox, clamp(), gh-pages:
 
 ### What I learned
 
-- **Inline Baseline Descender Bug:** Total margin control by implementing `display: block` declaration inside inline elements like `<span>`, `<img>`, `<time>`, `<a>`, `<p>`.
+- **Inline Baseline Descender Bug:** Total margin control by implementing `display: block` declaration inside inline elements like `<span>`, `<img>`, `<time>`, `<a>`.
 
 ```
 .blog-card__illustration {
@@ -87,7 +87,7 @@ ACTIVE STATE ↑
 
 ### Learning Reflection
 
-1. **A11Y-First Focus Sates:** I moved from a High Fidelity from a Figma-centric approach to a industry-standard-first framework.
+1. **A11Y-First Focus Sates:** I shifted from a high-fidelity from a Figma-centric approach to an industry-standard-first framework.
 
 2. **CSS Hygiene & Redundancy Elimination:** Even though the Figma design includes custom pointers, I learned to trust native browser rendering resources to avoid unnecessary assets.
 
