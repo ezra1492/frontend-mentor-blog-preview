@@ -153,6 +153,7 @@ ACTIVE STATE ↓
 ============== */
 .blog-card__link:hover {
   color: var(--clr-yellow);
+  text-shadow: 1px 1px 0 var(--clr-gray950);
 }
 
 .blog-card__link:focus-visible {
