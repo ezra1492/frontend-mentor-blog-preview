@@ -55,8 +55,9 @@ DESIGN TOKENS ↓
   /* BORDER */
   --bd-general: 1px solid var(--clr-gray500);
 
-  /* BOX SHADOW */
+  /* SHADOWS */
   --bs-general: 0.5rem 0.5rem var(--clr-gray950);
+  --ts-links: 1px 1px 0 var(--clr-gray950);
 }
 
 @font-face {
@@ -153,8 +154,16 @@ ACTIVE STATE ↓
 ============== */
 .blog-card__link:hover {
   color: var(--clr-yellow);
-  text-shadow: 1px 1px 0 var(--clr-gray950);
+  text-shadow: var(--ts-links);
   text-decoration: underline;
+}
+
+.attribution a:hover {
+  background-color: var(--clr-gray950);
+  border-radius: var(--br-2x-small);
+  color: var(--clr-yellow);
+  text-shadow: var(--ts-links);
+  font-weight: var(--fw-bold);
 }
 
 .blog-card__link:focus-visible {
