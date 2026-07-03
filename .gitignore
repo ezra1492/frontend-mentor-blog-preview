@@ -19,7 +19,11 @@ __MACOSX/
 # Design files
 blog-preview-card-figma/
 design/
+preview.jpg
 
 #AI guard rails
 AGENTS.md
 CLAUDE.md
+
+# Editor config
+.vscode/
